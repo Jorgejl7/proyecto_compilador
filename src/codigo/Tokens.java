@@ -1,0 +1,76 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package codigo;
+
+/**
+ *
+ * @author YOGA
+ */
+public enum Tokens {
+    Linea,
+    Tab_horizontal,
+    Tab_vertical,
+    Retorno,
+    Avance_pag,
+    Retroceso,
+    Comillas,
+    Entero,
+    Decimal_simple,
+    Decimal_doble,
+    Entero_largo,
+    Caracter,
+    Cadena,
+    If,
+    Else,
+    Switch,
+    Case,
+    Continue,
+    Default,
+    This,
+    Try,
+    Protected,
+    Do,
+    While,
+    For,
+    Return,
+    Void,
+    Break,
+    Public,
+    Class,
+    Igual,
+    Suma,
+    Resta,
+    Multiplicacion,
+    Division,
+    Numeral,
+    Porcentaje,
+    Op_logico,
+    Op_incremento,
+    Op_relacional,
+    Op_atribucion,
+    Es_formato,
+    Op_booleano,
+    Parentesis_a,
+    Parentesis_c,
+    Llave_a,
+    Llave_c,
+    Corchete_a,
+    Corchete_c,
+    Main,
+    Import,
+    Directiva_incluir,
+    Direccion_cad,
+    Numero_cad,
+    Para_cad,
+    Librerias,
+    Impresion,
+    Analizador,
+    P_coma,
+    Identificador,
+    Numero,
+    ERROR,
+    
+}
