@@ -124,10 +124,46 @@ public class FrmPrincipal extends javax.swing.JFrame {
                     resultado += "  <Reservada try>\t" + lexer.lexeme + "\n";
                     cont_reservada++;
                     break;
+                case Node:
+                    resultado += "  <Reservada Node>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
+                case Rotateleft:
+                    resultado += "  <Reservada rotateleft>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
+                case Right:
+                    resultado += "  <Reservada right>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
+                case Left:
+                    resultado += "  <Reservada left>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
+                case Updateheight:
+                    resultado += "  <Reservada updateheight>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
+                case Scanner:
+                    resultado += "  <Reservada Scanner>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
+                case New:
+                    resultado += "  <Reservada new>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
+                case Nextline:
+                    resultado += "  <Reservada nexline>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
+                case system_in:
+                    resultado += "  <Reservada System.in>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
                 case Protected:
                     resultado += "  <Reservada protected>\t" + lexer.lexeme + "\n";
                     cont_reservada++;
-                    break;
+                    break;               
                 case Do:
                     resultado += "  <Reservada do>\t" + lexer.lexeme + "\n";
                     cont_ciclo++;
@@ -276,6 +312,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
                     resultado += "  <Punto y coma>\t" + lexer.lexeme + "\n";
                     cont_operador++;
                     break;
+                case Punto:
+                    resultado += "  <Punto>\t\t" + lexer.lexeme + "\n";
+                    cont_operador++;
+                    break;
                 case Identificador:
                     resultado += "  <Identificador>\t\t" + lexer.lexeme + "\n";
                     cont_identificador++;
@@ -297,11 +337,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }
     
     public void conteoLexer(){
-        contadores="Total de identificadores: " + Integer.toString(cont_identificador)+
-        "\nTotal de Ciclo: " + Integer.toString(cont_ciclo)+
-        "\nTotal de Reservada: " + Integer.toString(cont_reservada)+
-        "\nTotal de Operador: " + Integer.toString(cont_operador)+
-        "\nTotal de condicional: " + Integer.toString(cont_condicional);
+        contadores="Total De Identificadores: " + Integer.toString(cont_identificador)+
+        "\nTotal De Ciclo: " + Integer.toString(cont_ciclo)+
+        "\nTotal De Reservada: " + Integer.toString(cont_reservada)+
+        "\nTotal De Operador: " + Integer.toString(cont_operador)+
+        "\nTotal De Condicional: " + Integer.toString(cont_condicional);
         txtAnalizarLex1.setText(contadores);
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

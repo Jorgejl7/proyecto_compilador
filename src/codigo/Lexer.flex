@@ -83,6 +83,33 @@ espacio=[ ,\t,\r]+
 /* Palabra reservada Protected */
 ( protected ) {lexeme=yytext(); return Protected;}
 
+/* Palabra reservada Node */
+( Node ) {lexeme=yytext(); return Node;}
+
+/* Palabra reservada Rotateleft */
+( rotateleft ) {lexeme=yytext(); return Rotateleft;}
+
+/* Palabra reservada Right */
+( right ) {lexeme=yytext(); return Right;}
+
+/* Palabra reservada Left */
+( left) {lexeme=yytext(); return Left;}
+
+/* Palabra reservada Updateheight */
+( updateheight ) {lexeme=yytext(); return Updateheight;}
+
+/* Palabra reservada Scanner */
+( Scanner ) {lexeme=yytext(); return Scanner;}
+
+/* Palabra reservada New */
+( new ) {lexeme=yytext(); return New;}
+
+/* Palabra reservada Nextline */
+( nextline ) {lexeme=yytext(); return Nextline;}
+
+/* Palabra reservada system_in */
+( System.in ) {lexeme=yytext(); return system_in;}
+
 /* Palabra reservada Do */
 ( do ) {lexeme=yytext(); return Do;}
 
@@ -196,6 +223,9 @@ espacio=[ ,\t,\r]+
 
 /* Punto y coma */
 ( ";" ) {lexeme=yytext(); return P_coma;}
+
+/* Punto*/
+( "." ) {lexeme=yytext(); return Punto;}
 
 /* Identificador */
 {L}({L}|{D})* {lexeme=yytext(); return Identificador;}

@@ -5,6 +5,12 @@
  */
 package codigo;
 
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.LeafPropertyXsiLoader;
+import java.awt.RenderingHints;
+import java.util.Scanner;
+import javafx.scene.control.PopupControl;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 /**
  *
  * @author YOGA
@@ -31,6 +37,15 @@ public enum Tokens {
     Default,
     This,
     Try,
+    Node,
+    Rotateleft,
+    Right,
+    Left,
+    Updateheight,
+    Scanner,
+    New,
+    Nextline,
+    system_in,
     Protected,
     Do,
     While,
@@ -69,6 +84,7 @@ public enum Tokens {
     Impresion,
     Analizador,
     P_coma,
+    Punto,
     Identificador,
     Numero,
     ERROR,
