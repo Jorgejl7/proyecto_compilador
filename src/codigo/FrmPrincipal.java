@@ -195,7 +195,31 @@ public class FrmPrincipal extends javax.swing.JFrame {
                 case Class:
                     resultado += "  <Reservada class>\t" + lexer.lexeme + "\n";
                     cont_reservada++;
-                    break;                 
+                    break; 
+                case Null:
+                    resultado += "  <Reservada NULL>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break; 
+                case Using:
+                    resultado += "  <Reservada using>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break; 
+                case Namespace:
+                    resultado += "  <Reservada namspace>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break; 
+                case Std:
+                    resultado += "  <Reservada std>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break; 
+                case Const:
+                    resultado += "  <Reservada const>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
+                case Struct:
+                    resultado += "  <Reservada struct>\t" + lexer.lexeme + "\n";
+                    cont_reservada++;
+                    break;
                 case Igual:
                     resultado += "  <Operador igual>\t" + lexer.lexeme + "\n";
                     cont_operador++;

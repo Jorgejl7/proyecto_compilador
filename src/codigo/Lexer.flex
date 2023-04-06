@@ -134,6 +134,25 @@ espacio=[ ,\t,\r]+
 /* Palabra reservada Class */
 ( class ) {lexeme=yytext(); return Class;}
 
+/* Palabra reservada Null */
+( NULL ) {lexeme=yytext(); return Null;}
+
+/* Palabra reservada Using */
+( using ) {lexeme=yytext(); return Using;}
+
+/* Palabra reservada Namespace */
+( namespace ) {lexeme=yytext(); return Namespace;}
+
+/* Palabra reservada Std */
+( std ) {lexeme=yytext(); return Std;}
+
+/* Palabra reservada Const */
+( const ) {lexeme=yytext(); return Const;}
+
+/* Palabra reservada Struct */
+( struct ) {lexeme=yytext(); return Struct;}
+
+
 /* Operador Igual */
 ( "=" ) {lexeme=yytext(); return Igual;}
 
