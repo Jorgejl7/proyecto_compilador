@@ -544,6 +544,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         txtAnalizarLex.setText(null);
         txtResultado.setText(null);
         txtAnalizarLex1.setText(null);
+        cont_condicional=0;
+        cont_ciclo=0;
+        cont_reservada=0;
+        cont_operador=0;
+        cont_identificador=0;
     }//GEN-LAST:event_btnLimpiarLexActionPerformed
 
     private void btnAnalizarLexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnalizarLexActionPerformed
